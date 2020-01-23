@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="styles/4-common.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-header.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
-    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" type="text/css" href="../static/styles/4-common.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/3-footer.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/6-filters.css">
+    <link rel="icon" href="../static/images/icon.png" />
     <title>HBnB</title>
   </head>
   <body>
@@ -19,7 +19,7 @@
           <h4>&nbsp;</h4>
           <div class="popover">
             <ul>
-              {% for st in states|sort(attribute='name') %}
+              {% for st in states.values()|sort(attribute='name') %}
                 <li>
                   <h2>{{st.name}}:</h2>
                   <ul>
@@ -37,7 +37,7 @@
           <h4>&nbsp;</h4>
           <div class="popover">
             <ul>
-              {% for am in amenities.values|sort(attribute='name') %}
+              {% for am in amenities.values()|sort(attribute='name') %}
                 <li>{{am.name}}</li>
               {% endfor %}
             </ul>
