@@ -19,18 +19,24 @@
 }
 .places h2 {
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     margin-top: 0;
+    float: left;
 }
 .title_box {
+    width: 100%;
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
     margin-top: -2%;
 }
 
 .title_box h2 {
-    text-align: center;
-    margin: 25px 0px 40px 30%;
+    max-width: 280px;
+    text-align: left;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .price_by_night {
     display: flex;
@@ -44,6 +50,7 @@
     border-radius: 50%;
     align-items: right;
     padding: 2.3%;
+    float: right;
 }
 
 .information {
